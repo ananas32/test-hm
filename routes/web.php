@@ -16,5 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('/{category}', 'CategoryController@category')->name('category');
-Route::get('/{category}/{page}', 'PageController@subcategory')
+Route::get('/{category}/{page}', 'PageController@page')
     ->name('page');

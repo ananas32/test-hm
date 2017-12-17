@@ -17,6 +17,6 @@ class CategoryController extends Controller
 
         $pages = Page::get();
 
-        return view('category', compact('pages'));
+        return view('category', compact('category','pages'));
     }
 }
