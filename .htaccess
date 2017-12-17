@@ -1,7 +1,8 @@
 <IfModule mod_rewrite.c>
-#Cache-Control: max-age=2629000
 
     RewriteEngine On
 
     RewriteRule ^(.*)$ public/$1 [L]
+
+    Redirect /index.php /
 </IfModule>

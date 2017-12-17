@@ -15,7 +15,7 @@ class CategoryController extends Controller
         ])->firstOrFail();
 
 
-        $pages = Page::get();
+        $pages = Page::paginate(6);
 
         return view('category', compact('category','pages'));
     }

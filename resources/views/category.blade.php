@@ -35,6 +35,9 @@
             </div>
         @endforeach
     </div>
+    <div style="text-align: center">
+        {{ $pages->links() }}
+    </div>
 </div>
 </body>
 </html>
