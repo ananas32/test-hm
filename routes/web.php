@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/{category}', 'CategoryController@category')->name('category');
+Route::get('/{category}/{page}', 'PageController@subcategory')
+    ->name('page');
